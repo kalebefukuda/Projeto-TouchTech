@@ -13,7 +13,6 @@ body{
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 0 10vw;
 }
 
 .header{
@@ -22,10 +21,10 @@ body{
   align-items: center;
   justify-content: space-around;
   border: red solid 1px;
-  max-width: 1440px;
   text-align: center;
   width: 100%;
-  height: 200px;
+  height: 118px;
+  flex-wrap: wrap;
 }
 .logo{
   font-family: 'Bungee';
@@ -65,6 +64,18 @@ body{
   color: #39A062;
   font-size: 19px;
 }
+.header-item:first-child ion-icon[name="person"]{
+  position: relative;
+  bottom: -1px;
+}
+.header-item:nth-child(2) ion-icon[name="heart"]{
+  position: relative;
+  top: 3px;
+}
+.header-item:nth-child(3) ion-icon[name="moon"]{
+  position: relative;
+  bottom: -2px;
+}
 .header-search{
   width: 100%;
 }
@@ -81,17 +92,32 @@ body{
 #search-input{                /*id atribuido á entrada de texto que add*/
   font-family: 'Aoboshi One', serif;
   font-size: 12px;
+  width: 100%;
 }
 .search-button{
   position: relative;
     right: 45px;
-    background: #D9D9D9;
+    background: transparent;
     border: none;
 }
 .search-button ion-icon{
   font-size: 22px;
+  background: transparent;
+  position: relative;
+    right: -11px;
+}
+.menu-produtos{
+  display: flex;
+  font-family: 'Aoboshi One', serif;
+  background:#544C50;
+  justify-content: space-around;
+  flex-basis: 100%;
+}
+.menu-item{
+  display: flex;
 }
 .header-cart {
+  font-family: 'Aoboshi One', serif;
   font-size: 20px;
   background-color:#66BB22;
   padding: 10px;
@@ -106,4 +132,6 @@ body{
 .header-cart ion-icon {
   font-size: 24px;
   margin-right: 5px;
+  position: relative;
+    left: -11px;
 }
