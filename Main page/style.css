@@ -31,6 +31,10 @@ body{
   color: white;
   font-size: 40px;
   height: 86px;
+  
+}
+.text-logo{
+  text-shadow: 0 0 10px #000000;        /*sombra na logo*/
 }
 .search-bar {
   width: 50%;
