@@ -177,3 +177,40 @@ h1{
 .text-alertpromo ion-icon{
   font-size: 31px;
 }
+.produtos-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+ 
+}
+.produto-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Aoboshi One', serif;
+}
+.text-container-produto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  bottom: -46px;
+}
+
+.title-produtomain{
+  align-items: center;
+  margin-top: -15px;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
+
+.valor-antes {
+  color: #FF9900; /* Define a cor para o valor "antes" */
+  text-decoration: line-through;    /*passa uma linha no meio da palavra*/
+}
+.valor-depois{
+  color: #66BB22;
+}
