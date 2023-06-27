@@ -6,8 +6,23 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+:root{
+  --text-color: white;    /*variável*/
+  --bg-color: #363033;
+  --title-color: white;
+  --bg-promocolor:#363033;
+  --text-produtocolor: white;
+}
+.light{
+  --text-color: #363033;
+  --bg-color: white;
+  --title-color: #39A062;
+  --bg-promocolor:#53DF8B;
+  --text-produtocolor: black;
+
+}
 body{
-  background: #363033;
+  background: var(--bg-color);
   font-size: 100%;
   display: flex;
   justify-content: center;
@@ -28,7 +43,7 @@ body{
 }
 .logo{
   font-family: 'Bungee';
-  color: white;
+  color: var(--title-color);
   font-size: 40px;
   height: 86px;
   
@@ -46,7 +61,7 @@ body{
   display: flex;
   font-family: 'Aoboshi One', serif;
   font-size: 15px;
-  color: white;
+  color: var(--text-color);
   gap: 50px;
   align-self: flex-start;
   padding: 24px;
@@ -59,7 +74,7 @@ body{
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: white;
+  color: var(--text-color);
   gap: 5px;
   height: 100%;
 }
@@ -159,7 +174,7 @@ body{
   border-right: none;
 }
 .text-alertpromo{
-  background: #544C50;
+  background: var(--bg-promocolor);
   display: flex;
   justify-content: space-evenly;
   font-family: 'Aoboshi One', serif;
@@ -181,7 +196,7 @@ h1{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  color: white;
+  color: var(--text-produtocolor);
  
 }
 .produto-item{
