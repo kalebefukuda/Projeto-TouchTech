@@ -71,7 +71,9 @@ body{
   padding: 24px;
   width: 100%;
   justify-content: center;
-  gap: 120px;
+  gap: 91px;
+    POSITION: RELATIVE;
+    LEFT: -20PX;
 }
 .header-menu a {
   display: flex;
@@ -81,6 +83,7 @@ body{
   gap: 5px;
   height: 100%;
 }
+
 .header-menu a ion-icon {
   margin-bottom: 5px;
   color: #39A062;
@@ -201,7 +204,7 @@ body{
   border: solid 3px #53DF8B;
   border-left: none;
   border-right: none;
-  height: 35px;
+  height: 37px;
   margin-top: -6px;
 }
 h1{

@@ -18,12 +18,15 @@ darkModeToggle.addEventListener('click', toggleDarkMode);
 function toggleDarkMode() {                                             
   isDarkMode = !isDarkMode;
   const icon = darkModeToggle.querySelector('ion-icon');
+  const text = darkModeToggle.querySelector('br');
 
   if (isDarkMode) {
     icon.setAttribute('name', 'sunny');
+    text.textContent = 'MODO CLARO';
     // Outras ações para o modo claro
   } else {
     icon.setAttribute('name', 'moon');
+    text.textContent = 'MODO ESCURO';
     // Outras ações para o modo escuro
   }
 }
