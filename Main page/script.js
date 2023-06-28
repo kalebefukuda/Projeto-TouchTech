@@ -1,5 +1,5 @@
 // Selecione o link "Modo Escuro" pelo ID
-const darkModeLink = document.getElementById('dark-mode');
+const darkModeLink = document.getElementById('dark-mode-toggle');           /*para fazer o light mode*/
 
 // Adicione um evento de clique ao link
 darkModeLink.addEventListener('click', function() {
@@ -9,3 +9,22 @@ darkModeLink.addEventListener('click', function() {
   // Se você também deseja alternar as variáveis do CSS no elemento raiz :root
   document.documentElement.classList.toggle('light');
 });
+
+const darkModeToggle = document.getElementById('dark-mode-toggle');                 /*trocar o icone no light mode*/
+let isDarkMode = false; // Exemplo de estado inicial
+
+darkModeToggle.addEventListener('click', toggleDarkMode);
+
+function toggleDarkMode() {                                             
+  isDarkMode = !isDarkMode;
+  const icon = darkModeToggle.querySelector('ion-icon');
+
+  if (isDarkMode) {
+    icon.setAttribute('name', 'sunny');
+    // Outras ações para o modo claro
+  } else {
+    icon.setAttribute('name', 'moon');
+    // Outras ações para o modo escuro
+  }
+}
+

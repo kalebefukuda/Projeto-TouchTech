@@ -7,11 +7,13 @@
   text-decoration: none;
 }
 :root{
-  --text-color: white;    /*variável*/
-  --bg-color: #363033;
-  --title-color: white;
-  --bg-promocolor:#363033;
+  --text-color: white;    /*variável cor texto body*/
+  --bg-color: #363033;    /*background*/
+  --title-color: white;     /*text logo*/
+  --bg-promocolor:#363033;   /*back promo color*/
   --text-produtocolor: white;
+  --text-shadow: 0 0 10px #0000;
+  --switch-bg-url: url(<ion-icon name="moon"></ion-icon>);
 }
 .light{
   --text-color: #363033;
@@ -19,6 +21,8 @@
   --title-color: #39A062;
   --bg-promocolor:#53DF8B;
   --text-produtocolor: black;
+  --text-shadow: none;
+  --switch-bg-url: url(<ion-icon name="sunny"></ion-icon>);
 
 }
 body{
@@ -49,7 +53,7 @@ body{
   
 }
 .text-logo{
-  text-shadow: 0 0 10px #000000;        /*sombra na logo*/
+  text-shadow: var(--text-shadow);       /*sombra na logo*/
 }
 .search-bar {
   width: 50%;
@@ -82,6 +86,16 @@ body{
   margin-bottom: 5px;
   color: #39A062;
   font-size: 19px;
+}
+#dark-mode-toggle{
+  height: 24px;
+  cursor: pointer;
+}
+#dark-mode-toggle ion-icon[name="sunny"] {
+  color: #39A062; /* Cor personalizada */
+  font-size: 24px; /* Tamanho personalizado */
+  position: relative;
+    bottom: -2px;
 }
 .header-item:first-child ion-icon[name="person"]{
   position: relative;
@@ -187,7 +201,7 @@ body{
 }
 h1{
   font-size: 21px;
-  color: white;
+  color: var(--text-color);
 }
 .text-alertpromo ion-icon{
   font-size: 31px;
