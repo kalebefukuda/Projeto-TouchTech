@@ -187,6 +187,9 @@ body{
   border-left: none;
   border-right: none;
 }
+.img-main img{
+  width: 100%;
+}
 .text-alertpromo{
   background: var(--bg-promocolor);
   display: flex;
@@ -198,6 +201,7 @@ body{
   border-left: none;
   border-right: none;
   height: 35px;
+  margin-top: -6px;
 }
 h1{
   font-size: 21px;
