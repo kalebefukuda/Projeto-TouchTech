@@ -10,24 +10,15 @@ darkModeLink.addEventListener('click', function() {
   document.documentElement.classList.toggle('light');
 });
 
-const darkModeToggle = document.getElementById('dark-mode-toggle');                 /*trocar o icone no light mode*/
-let isDarkMode = false; // Exemplo de estado inicial
+const modoTexto = document.getElementById('modo-texto');
+const darkModeToggle = document.getElementById('dark-mode-toggle');
 
-darkModeToggle.addEventListener('click', toggleDarkMode);
-
-function toggleDarkMode() {                                             
-  isDarkMode = !isDarkMode;
-  const icon = darkModeToggle.querySelector('ion-icon');
-  const text = darkModeToggle.querySelector('br');
-
-  if (isDarkMode) {
-    icon.setAttribute('name', 'sunny');
-    text.textContent = 'MODO CLARO';
-    // Outras ações para o modo claro
+darkModeToggle.addEventListener('click', () => {
+  if (document.body.classList.contains('light')) {                /*para mudar o texto de modo escuro para modo claro */
+    modoTexto.textContent = 'MODO CLARO';
   } else {
-    icon.setAttribute('name', 'moon');
-    text.textContent = 'MODO ESCURO';
-    // Outras ações para o modo escuro
+    modoTexto.textContent = 'MODO ESCURO';
   }
-}
+});
+
 
