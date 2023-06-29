@@ -20,5 +20,3 @@ darkModeToggle.addEventListener('click', () => {
     modoTexto.textContent = 'MODO ESCURO';
   }
 });
-
-
