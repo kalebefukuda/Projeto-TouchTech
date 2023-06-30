@@ -47,6 +47,10 @@ body{
   position: fixed;
   top: 0;
   background: var(--bg-color);
+  border: solid 3px #53DF8B;
+  border-left: none;
+  border-right: none;
+  border-top: none;
   
 }
 
@@ -55,6 +59,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
   }
 
   .logo{
@@ -87,14 +92,14 @@ body{
   }
 }
 
-.logo{
+.logo a{
   font-family: 'Bungee';
   color: var(--title-color);
   font-size: 40px;
   height: 86px;
   align-self: end;
 }
-.text-logo{
+.text-logo {
   text-shadow: var(--text-shadow);       /*sombra na logo*/
 }
 .search-bar {
@@ -232,3 +237,47 @@ a{
   position: relative;
     left: -11px;
 }
+.container-teclado-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 157px;
+}
+.teclado-title{
+  display: flex;
+  margin: 36px;
+  color:  var(--text-color);
+}
+h2{
+  font-family: 'Aoboshi One', serif;
+}
+.teclados-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: var(--text-produtocolor);
+}
+.teclado-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Aoboshi One', serif;
+ 
+  transition: opacity 0.3s, transform 0.3s;
+  transition: .35s;
+  cursor: pointer;
+}
+.teclado-item img {
+  width: 400px; /* Defina o valor desejado para a largura */
+  height: 355px; /* Isso garantirá que a altura seja ajustada proporcionalmente */
+}
+.valor-antes {
+  color: #FF9900; /* Define a cor para o valor "antes" */
+  text-decoration: line-through;    /*passa uma linha no meio da palavra*/
+}
+.valor-depois{
+  color: #66BB22;
+}
+

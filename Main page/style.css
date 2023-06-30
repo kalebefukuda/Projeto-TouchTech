@@ -296,7 +296,7 @@ h1{
   transition: .35s;
   cursor: pointer;
 }
-.produtos-main:hover> :not(:hover){
+.produtos-item:hover> :not(:hover){
   opacity: 0.4;
   transform: scale(0.9);
   transition: .35s;
