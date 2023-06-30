@@ -23,7 +23,6 @@
   --text-produtocolor: black;
   --text-shadow: none;
   --switch-bg-url: url(<ion-icon name="sunny"></ion-icon>);
-
 }
 body{
   background: var(--bg-color);
@@ -35,14 +34,12 @@ body{
   flex-direction: column;
   transition: background-color 0.3s ease;  /*transiçãao de back com delay*/
 }
-
 .product-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
-
 
 .header{
   display: flex;
@@ -57,14 +54,12 @@ body{
   background: var(--bg-color);
   
 }
-
 @media (max-width: 767px) {   /* QUANDO EM TELAS MENORES */
   .header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
   .logo{
     align-self: center;
     margin-bottom: 20px;
@@ -73,23 +68,19 @@ body{
     left: 50%;
     transform: translateX(-50%);
   }
-
   .header-menu {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 60px !important;
   }
-
   .header-search {
     width: 100%;
     margin-top: 10px;
   }
-
   .header-search input {
     width: 100%;
   }
-
   .menu-produtos {
     justify-content: center;
     display: flex;
@@ -98,7 +89,6 @@ body{
     gap: 20px;
   }
 }
-
 .logo{
   font-family: 'Bungee';
   color: var(--title-color);
@@ -137,7 +127,6 @@ body{
   gap: 5px;
   height: 100%;
 }
-
 .header-menu a ion-icon {
   margin-bottom: 5px;
   color: #39A062;
@@ -215,12 +204,10 @@ body{
   align-items: center;
 }
 
-
 a{
   text-decoration: none;
   color: white;
 }
-
 .menu-item:hover .dropdown-menu{
   display: block;
 }
