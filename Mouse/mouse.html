@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mouse.css">
+    <title>MOUSE</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <span class="text-logo"> TouchTech </span>
+        </div>
+        <div class="search-bar">
+          <nav class="header-menu">
+            <a class="header-item" href="#"
+              ><ion-icon name="person"></ion-icon> MINHA CONTA <br></a>
+            <a class="header-item" href="#"><ion-icon name="heart"></ion-icon> MEUS FAVORITOS</a>
+            <a id= "dark-mode-toggle" class="header-item" href="#"><ion-icon name="moon"></ion-icon> <span id="modo-texto">MODO ESCURO</span></a>
+          </nav>
+          <nav class="header-search">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input
+                  id="search-input"
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  value="   Digite o que você procura..."/>
+                <!--barra de pesquisa-->
+                <button class="search-button" type="submit">
+                  <ion-icon name="search-outline"></ion-icon>
+                </button>
+              </form>
+            </div>
+          </nav>
+        </div>
+        <div class="header-cart"><ion-icon name="cart"></ion-icon>CARRINHO</div>
+        
+        <nav class="menu-produtos">
+          <div class="menu-item">
+            <a href="#">MOUSES</a>
+            <ion-icon name="caret-down-outline"></ion-icon>
+          </div>
+          <div class="menu-item">
+            <a href="#">TECLADOS</a>
+            <ion-icon name="caret-down-outline"></ion-icon>
+          </div>
+          <div class="menu-item">
+            <a href="#">HEADSETS</a>
+            <ion-icon name="caret-down-outline"></ion-icon>
+          </div>
+          <div class="menu-item">
+            <a href="#">MONITORES</a>
+            <ion-icon name="caret-down-outline"></ion-icon>
+          </div>
+          <div class="menu-item">
+           <a href="#">MOUSEPADS</a>
+            <ion-icon name="caret-down-outline"></ion-icon>
+          </div>
+        </nav>
+      </header>
+</body>
+<script
+type="module"
+src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+nomodule
+src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>
+<script src="mouse.js"></script>
+</html>
