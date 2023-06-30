@@ -96,8 +96,9 @@ body{
   height: 86px;
   align-self: end;
 }
-.text-logo{
-  text-shadow: var(--text-shadow);       /*sombra na logo*/
+.text-logo a{
+  text-shadow: var(--text-shadow); 
+color: var(--title-color);   /*sombra na logo*/
 }
 .search-bar {
   width: 50%;
@@ -203,15 +204,23 @@ body{
   color: white;
   align-items: center;
 }
+.menu-item-link {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu-item-link:hover {
+  opacity: 0.7;
+}
+
+.menu-item-link:active {
+  opacity: 0.5;
+}
 
 a{
   text-decoration: none;
   color: white;
+ 
 }
-.menu-item:hover .dropdown-menu{
-  display: block;
-}
-
 .header-cart {
   font-family: 'Aoboshi One', serif;
   font-size: 20px;
