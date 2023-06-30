@@ -194,7 +194,7 @@ body{
 .menu-produtos{
   display: flex;
   font-family: 'Aoboshi One', serif;
-  background:#544C50;
+  background: #544C50;
   justify-content: space-around;
   flex-basis: 100%;
   height: 35px;
@@ -248,15 +248,21 @@ a{
   display: flex;
   margin: 36px;
   color:  var(--text-color);
+  
 }
 h2{
   font-family: 'Aoboshi One', serif;
+  border: solid 3px #53DF8B;
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }
 .teclados-main{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   color: var(--text-produtocolor);
+  
 }
 .teclado-item{
   display: flex;
@@ -265,13 +271,18 @@ h2{
   align-items: center;
   font-family: 'Aoboshi One', serif;
  
-  transition: opacity 0.3s, transform 0.3s;
-  transition: .35s;
-  cursor: pointer;
 }
 .teclado-item img {
   width: 400px; /* Defina o valor desejado para a largura */
-  height: 355px; /* Isso garantirá que a altura seja ajustada proporcionalmente */
+  height: 355px;
+  background: #544C50;
+  border-radius: 61px; /* Isso garantirá que a altura seja ajustada proporcionalmente */
+}
+.img-teclado{
+  display: flex;
+  border: solid 2px #39A062;
+  
+  
 }
 .valor-antes {
   color: #FF9900; /* Define a cor para o valor "antes" */
