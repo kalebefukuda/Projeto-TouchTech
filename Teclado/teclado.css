@@ -207,6 +207,12 @@ body{
   color: white;
   align-items: center;
 }
+.menu-produtos :hover{
+  color: #53DF8B;
+ 
+  border-radius: 8px;
+  
+}
 
 
 a{
@@ -214,9 +220,6 @@ a{
   color: white;
 }
 
-.menu-item:hover .dropdown-menu{
-  display: block;
-}
 
 .header-cart {
   font-family: 'Aoboshi One', serif;
