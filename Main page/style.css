@@ -291,8 +291,8 @@ h1{
   justify-content: center;
   align-items: center;
   font-family: 'Aoboshi One', serif;
- 
-  transition: opacity 0.3s, transform 0.5s;
+  backface-visibility: hidden;
+  transition: opacity 0.3s;
   transition: .35s;
   cursor: pointer;
 }
@@ -302,9 +302,9 @@ h1{
   transform: scale(1.09); /* Ajuste o valor de escala conforme desejado */
   transition: opacity 0.3s, transform 0.3s; /* Adiciona transições suaves */
 }
-.produto-content:not(:hover) {
+.produto-item:not(:hover) {
   opacity: 1; /* Define a opacidade dos itens de produto quando não estiverem com o mouse em cima */
-  transition: opacity 0.3s; /* Adiciona uma transição suave para a opacidade */
+  transition: opacity 0.3s, transform 0.3s; /* Adiciona uma transição suave para a opacidade */
 }
 .text-container-produto{
   display: flex;
