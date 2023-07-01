@@ -30,3 +30,27 @@ darkModeToggle.addEventListener('click', function() {
     modoTexto.textContent = 'MODO ESCURO';
   }
 });
+// Selecione todos os links da página com a classe "page-link"
+const pageLinks = document.querySelectorAll('.page-link');
+
+// Adicione um evento de clique a cada link
+pageLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    // Prevenir o comportamento padrão do link
+    event.preventDefault();
+
+    // Adicionar a classe 'fade-out' ao body
+    document.body.classList.add('fade-out');
+
+    // Aguardar um breve período de tempo para permitir a transição
+    setTimeout(() => {
+      // Navegar para a nova página
+      window.location.href = link.href;
+    }, 200); // Ajuste esse valor se necessário
+  });
+});
+// Quando a página terminar de carregar
+window.addEventListener('load', () => {
+  // Remover a classe 'fade-out' do body
+  document.body.classList.add('fade-in');
+});

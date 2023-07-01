@@ -37,8 +37,15 @@ body{
   margin: 0;
   flex-direction: column;
   transition: background-color 0.3s ease;  /*transiçãao de back com delay*/
+  opacity: 0;
+  transition: opacity 0.05s ease-in-out;
 }
-
+body.fade-in {
+  opacity: 1;
+}
+body.fade-out {
+  opacity: 0;
+}
 .header{
   display: flex;
   flex-direction: row;
@@ -54,17 +61,13 @@ body{
   border-left: none;
   border-right: none;
   border-top: none;
-  
 }
-
 @media (max-width: 767px) {   /* QUANDO EM TELAS MENORES */
   .header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
   }
-
   .logo{
     align-self: center;
     margin-bottom: 20px;
@@ -73,28 +76,23 @@ body{
     left: 50%;
     transform: translateX(-50%);
   }
-
   .header-menu {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 60px !important;
   }
-
   .header-search {
     width: 100%;
     margin-top: 10px;
   }
-
   .header-search input {
     width: 100%;
   }
-
   .menu-produtos {
     justify-content: center;
   }
 }
-
 .logo a{
   font-family: 'Bungee';
   color: var(--title-color);
@@ -122,8 +120,8 @@ body{
   width: 100%;
   justify-content: center;
   gap: 91px;
-    POSITION: RELATIVE;
-    LEFT: -20PX;
+  POSITION: RELATIVE;
+  LEFT: -20PX;
 }
 .header-menu a {
   display: flex;
@@ -133,7 +131,6 @@ body{
   gap: 5px;
   height: 100%;
 }
-
 .header-menu a ion-icon {
   margin-bottom: 5px;
   color: #39A062;
@@ -203,7 +200,6 @@ body{
   flex-basis: 100%;
   height: 35px;
   margin: 16px 0 0;
-  
 }
 .menu-item{
   font-size: 16px;
@@ -213,18 +209,12 @@ body{
 }
 .menu-produtos :hover{
   color: #53DF8B;
- 
   border-radius: 8px;
-  
 }
-
-
 a{
   text-decoration: none;
   color: var(--textmenu-color);
 }
-
-
 .header-cart {
   font-family: 'Aoboshi One', serif;
   font-size: 20px;
@@ -255,7 +245,6 @@ a{
   display: flex;
   margin: 36px;
   color:  var(--text-color);
-  
 }
 h2{
   font-family: 'Aoboshi One', serif;
@@ -269,7 +258,6 @@ h2{
   flex-direction: row;
   justify-content: space-around;
   color: var(--text-produtocolor);
-  
 }
 .teclado-item{
   display: flex;
@@ -277,7 +265,6 @@ h2{
   justify-content: center;
   align-items: center;
   font-family: 'Aoboshi One', serif;
- 
 }
 .teclado-item img {
   width: 400px; /* Defina o valor desejado para a largura */
@@ -288,8 +275,6 @@ h2{
 .img-teclado{
   display: flex;
   border: solid 2px #39A062;
-  
-  
 }
 .valor-antes {
   color: #FF9900; /* Define a cor para o valor "antes" */
