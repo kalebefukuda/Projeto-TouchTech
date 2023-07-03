@@ -244,3 +244,77 @@ body.fade-out {
   position: relative;
     left: -11px;
 }
+.container-mouse-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 157px;
+}
+.mouse-title{
+  display: flex;
+  margin: 36px;
+  color:  var(--text-color);
+}
+h2{
+  font-family: 'Aoboshi One', serif;
+  border: solid 3px #53DF8B;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.mouses-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: var(--text-produtocolor);
+}
+.mouse-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Aoboshi One', serif;
+}
+.title-produtomain{
+  position: relative;
+    bottom: -15px;
+}
+.text-produtomain{
+  position: relative;
+    bottom: -18px;
+}
+.mouse-item:hover {
+  opacity: 1.8; /* Ajuste o valor de opacidade conforme desejado */
+  transform: scale(1.09); /* Ajuste o valor de escala conforme desejado */
+  transition: opacity 0.3s, transform 0.3s; /* Adiciona transições suaves */
+}
+.mouse-item:not(:hover) {
+  opacity: 1; /* Define a opacidade dos itens de produto quando não estiverem com o mouse em cima */
+  transition: opacity 0.3s, transform 0.3s; /* Adiciona uma transição suave para a opacidade */
+}
+.mouse-item img {
+  width: 400px; /* Defina o valor desejado para a largura */
+  height: 355px;
+  border-radius: 61px; /* Isso garantirá que a altura seja ajustada proporcionalmente */
+}
+.img-mouse{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.img-mouse[src="/Mouse/assets-mouse/gpro.png"]{
+  width: 492px;
+}
+.img-mouse[src="/Mouse/assets-mouse/fallen.png"]{
+  width: 343px;
+  height: 323px;
+}
+.valor-antes {
+  color: #FF9900; /* Define a cor para o valor "antes" */
+  text-decoration: line-through;    /*passa uma linha no meio da palavra*/
+}
+.valor-depois{
+  color: #66BB22;
+}
