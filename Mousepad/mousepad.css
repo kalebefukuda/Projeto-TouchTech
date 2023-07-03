@@ -291,6 +291,20 @@ h2{
   opacity: 1; /* Define a opacidade dos itens de produto quando não estiverem com o mouse em cima */
   transition: opacity 0.3s, transform 0.3s; /* Adiciona uma transição suave para a opacidade */
 }
+.text-container-produto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  bottom: -46px;
+}
+.title-produtomain{
+  align-items: center;
+  margin-top: -15px;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
 .mousepad-item img {
   width: 400px; /* Defina o valor desejado para a largura */
   height: 355px;
