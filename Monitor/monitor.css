@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Bungee&display=swap');   /*fonts*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root{
+  --text-color: white;    /*variável cor texto body*/
+  --bg-color: #363033;    /*background*/
+  --title-color: white;     /*text logo*/
+  --bg-promocolor:#363033;   /*back promo color*/
+  --text-produtocolor: white;
+  --text-shadow: 0 0 10px #0000;
+  --switch-bg-url: url(<ion-icon name="moon"></ion-icon>);
+  --menu-bg: #544C50;
+  --textmenu-color: white;
+}
+.light{
+  --text-color: #363033;
+  --bg-color: white;
+  --title-color: #39A062;
+  --bg-promocolor:#53DF8B;
+  --text-produtocolor: black;
+  --text-shadow: none;
+  --switch-bg-url: url(<ion-icon name="sunny"></ion-icon>);
+  --menu-bg: #D9D9D9;
+  --textmenu-color: #544C50;
+}
+body{
+  background: var(--bg-color);
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
+  transition: background-color 0.3s ease;  /*transiçãao de back com delay*/
+  opacity: 0;
+  transition: opacity 0.05s ease-in-out;
+}
+body.fade-in {
+  opacity: 1;
+}
+body.fade-out {
+  opacity: 0;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  flex-wrap:wrap;
+  position: fixed;
+  top: 0;
+  background: var(--bg-color);
+  
+}
+
+@media (max-width: 767px) {   /* QUANDO EM TELAS MENORES */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo{
+    align-self: center;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px !important;
+  }
+
+  .header-search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .header-search input {
+    width: 100%;
+  }
+
+  .menu-produtos {
+    justify-content: center;
+  }
+}
+
+.logo a { 
+  font-family: 'Bungee';
+  color: var(--title-color);
+  font-size: 40px;
+  height: 86px;
+  align-self: end;
+}
+.text-logo{
+  text-shadow: var(--text-shadow);       /*sombra na logo*/
+}
+.search-bar {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-menu{
+  display: flex;
+  font-family: 'Aoboshi One', serif;
+  font-size: 15px;
+  color: var(--text-color);
+  gap: 50px;
+  align-self: flex-start;
+  padding: 24px;
+  width: 100%;
+  justify-content: center;
+  gap: 91px;
+    POSITION: RELATIVE;
+    LEFT: -20PX;
+}
+.header-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  gap: 5px;
+  height: 100%;
+}
+
+.header-menu a ion-icon {
+  margin-bottom: 5px;
+  color: #39A062;
+  font-size: 19px;
+}
+#dark-mode-toggle{
+  cursor: pointer;
+}
+#dark-mode-toggle ion-icon[name="sunny"] {
+  color: #39A062; /* Cor personalizada */
+  font-size: 24px; /* Tamanho personalizado */
+  position: relative;
+    bottom: -2px;
+}
+.header-item:first-child ion-icon[name="person"]{
+  position: relative;
+  bottom: -1px;
+}
+.header-item:nth-child(2) ion-icon[name="heart"]{
+  position: relative;
+  top: 3px;
+}
+.header-item:nth-child(3) ion-icon[name="moon"]{
+  position: relative;
+  bottom: -2px;
+}
+.header-item{
+  text-align: justify;
+}
+.header-search{
+  width: 100%;
+}
+.header-search form{
+  display: flex;               /*add styles in the box header search*/
+
+}
+.header-search input{
+  width: 100%;
+  border-radius: 19px;
+  background: #D9D9D9;        /*estiliza a barra parte de dentro da barra de search*/
+  height: 34px;
+}
+#search-input{                /*id atribuido á entrada de texto que add*/
+  font-family: 'Aoboshi One', serif;
+  font-size: 12px;
+  width: 100%;
+  border: none;
+}
+.search-button{
+  position: relative;
+    right: 45px;
+    background: transparent;
+    border: none;
+}
+.search-button ion-icon{
+  font-size: 22px;
+  background: transparent;
+  position: relative;
+    right: -11px;
+}
+.menu-produtos{
+  display: flex;
+  font-family: 'Aoboshi One', serif;
+  background:var(--menu-bg);
+  color: var(--textmenu-color);
+  justify-content: space-around;
+  flex-basis: 100%;
+  height: 35px;
+  margin: 16px 0 0;
+  
+}
+.menu-item{
+  font-size: 16px;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+.menu-produtos :hover{
+  color: #53DF8B;
+  border-radius: 8px;
+}
+ a{
+    text-decoration: none;
+    color: var(--textmenu-color);
+}
+
+.header-cart {
+  font-family: 'Aoboshi One', serif;
+  font-size: 20px;
+  background-color:#66BB22;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 213px;
+  height: 57px;
+  justify-content: center;
+}
+.header-cart ion-icon {
+  font-size: 24px;
+  margin-right: 5px;
+  position: relative;
+    left: -11px;
+}
+.container-monitor-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 157px;
+}
+.monitor-title{
+  display: flex;
+  margin: 36px;
+  color:  var(--text-color);
+}
+h2{
+  font-family: 'Aoboshi One', serif;
+  border: solid 3px #53DF8B;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.monitores-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: var(--text-produtocolor);
+}
+.monitor-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Aoboshi One', serif;
+}
+.title-produtomain{
+  position: relative;
+    bottom: -15px;
+}
+.text-produtomain{
+  position: relative;
+    bottom: -18px;
+}
+.monitor-item:hover {
+  opacity: 1.8; /* Ajuste o valor de opacidade conforme desejado */
+  transform: scale(1.09); /* Ajuste o valor de escala conforme desejado */
+  transition: opacity 0.3s, transform 0.3s; /* Adiciona transições suaves */
+}
+.monitor-item:not(:hover) {
+  opacity: 1; /* Define a opacidade dos itens de produto quando não estiverem com o mouse em cima */
+  transition: opacity 0.3s, transform 0.3s; /* Adiciona uma transição suave para a opacidade */
+}
+.monitor-item img {
+  width: 400px; /* Defina o valor desejado para a largura */
+  height: 355px;
+  border-radius: 61px; /* Isso garantirá que a altura seja ajustada proporcionalmente */
+}
+.img-monitor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.valor-antes {
+  color: #FF9900; /* Define a cor para o valor "antes" */
+  text-decoration: line-through;    /*passa uma linha no meio da palavra*/
+}
+.valor-depois{
+  color: #66BB22;
+}
