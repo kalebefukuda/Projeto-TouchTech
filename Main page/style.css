@@ -303,8 +303,7 @@ h1{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  color: var(--text-produtocolor);
-  
+  color: var(--text-produtocolor); 
 }
 .produto-item{
   display: flex;
@@ -335,14 +334,12 @@ h1{
   position: relative;
   bottom: -46px;
 }
-
 .title-produtomain{
   align-items: center;
   margin-top: -15px;
   white-space: nowrap;
   margin-bottom: 15px;
 }
-
 .valor-antes {
   color: #FF9900; /* Define a cor para o valor "antes" */
   text-decoration: line-through;    /*passa uma linha no meio da palavra*/
