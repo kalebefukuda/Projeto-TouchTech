@@ -221,27 +221,13 @@ color: var(--title-color);   /*sombra na logo*/
   align-items: center;
   
 }
-.dropdown-menu{
-  position: absolute;
-  bottom: -100px;
-  display: none;
-  padding: 5px;
-  list-style: none;
+.menu-produtos :hover{
+  color: #53DF8B;
+  border-radius: 8px;
 }
-.dropdown-menu li{
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  position: relative;
-  left:-5px;
-}
-a{
-  text-decoration: none;
-  color: white;
-}
-.dropdown-menu a{
-  display: block;
-  
- 
+ a{
+    text-decoration: none;
+    color: var(--textmenu-color);
 }
 .header-cart {
   font-family: 'Aoboshi One', serif;
@@ -312,7 +298,6 @@ h1{
   justify-content: center;
   align-items: center;
   font-family: 'Aoboshi One', serif;
- 
   transition: opacity 0.3s, transform 0.3s;
   transition: .35s;
   cursor: pointer;
