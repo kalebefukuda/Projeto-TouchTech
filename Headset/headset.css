@@ -46,12 +46,6 @@ body.fade-in {
 body.fade-out {
   opacity: 0;
 }
-.product-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
 
 .header{
   display: flex;
@@ -66,12 +60,14 @@ body.fade-out {
   background: var(--bg-color);
   
 }
+
 @media (max-width: 767px) {   /* QUANDO EM TELAS MENORES */
   .header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .logo{
     align-self: center;
     margin-bottom: 20px;
@@ -80,37 +76,37 @@ body.fade-out {
     left: 50%;
     transform: translateX(-50%);
   }
+
   .header-menu {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 60px !important;
   }
+
   .header-search {
     width: 100%;
     margin-top: 10px;
   }
+
   .header-search input {
     width: 100%;
   }
+
   .menu-produtos {
     justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
   }
 }
-.logo{
+
+.logo a { 
   font-family: 'Bungee';
   color: var(--title-color);
   font-size: 40px;
   height: 86px;
   align-self: end;
 }
-.text-logo a{
-  text-shadow: var(--text-shadow); 
-color: var(--title-color);   /*sombra na logo*/
+.text-logo{
+  text-shadow: var(--text-shadow);       /*sombra na logo*/
 }
 .search-bar {
   width: 50%;
@@ -140,6 +136,7 @@ color: var(--title-color);   /*sombra na logo*/
   gap: 5px;
   height: 100%;
 }
+
 .header-menu a ion-icon {
   margin-bottom: 5px;
   color: #39A062;
@@ -209,40 +206,25 @@ color: var(--title-color);   /*sombra na logo*/
   flex-basis: 100%;
   height: 35px;
   margin: 16px 0 0;
-  transition: transform 0.3s;
   
 }
-
 .menu-item{
-  
   font-size: 16px;
   display: flex;
-  color: var(--textmenu-color);
-  align-items: center;
-  
-}
-.dropdown-menu{
-  position: absolute;
-  bottom: -100px;
-  display: none;
-  padding: 5px;
-  list-style: none;
-}
-.dropdown-menu li{
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  position: relative;
-  left:-5px;
-}
-a{
-  text-decoration: none;
   color: white;
+  align-items: center;
 }
-.dropdown-menu a{
-  display: block;
-  
- 
+.menu-produtos :hover{
+  color: #53DF8B;
+  border-radius: 8px;
 }
+ a{
+    text-decoration: none;
+    color: var(--textmenu-color);
+}
+
+
+
 .header-cart {
   font-family: 'Aoboshi One', serif;
   font-size: 20px;
@@ -262,68 +244,52 @@ a{
   position: relative;
     left: -11px;
 }
-.container-main{
+.container-headset-main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   margin-top: 157px;
 }
- 
-.img-main{
-  border: solid 3px #53DF8B;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-  transition: .35s;
-  cursor: pointer;
-}
-.img-main img{
-  width: 100%;
-}
-.text-alertpromo{
-  background: var(--bg-promocolor);
+.headset-title{
   display: flex;
-  justify-content: space-evenly;
+  margin: 36px;
+  color:  var(--text-color);
+}
+h2{
   font-family: 'Aoboshi One', serif;
-  color: white;
   border: solid 3px #53DF8B;
   border-left: none;
   border-right: none;
-  height: 37px;
-  margin-top: -6px;
+  border-top: none;
 }
-h1{
-  font-size: 21px;
-  color: white;
-}
-.text-alertpromo ion-icon{
-  font-size: 31px;
-}
-.produtos-main{
+.headsets-main{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  color: var(--text-produtocolor); 
+  color: var(--text-produtocolor);
 }
-.produto-item{
+.headset-item{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Aoboshi One', serif;
- 
-  transition: opacity 0.3s, transform 0.3s;
-  transition: .35s;
-  cursor: pointer;
 }
-
-.produto-item:hover {
+.title-produtomain{
+  position: relative;
+    bottom: -15px;
+}
+.text-produtomain{
+  position: relative;
+    bottom: -18px;
+}
+.headset-item:hover {
   opacity: 1.8; /* Ajuste o valor de opacidade conforme desejado */
   transform: scale(1.09); /* Ajuste o valor de escala conforme desejado */
   transition: opacity 0.3s, transform 0.3s; /* Adiciona transições suaves */
 }
-.produto-item:not(:hover) {
+.headset-item:not(:hover) {
   opacity: 1; /* Define a opacidade dos itens de produto quando não estiverem com o mouse em cima */
   transition: opacity 0.3s, transform 0.3s; /* Adiciona uma transição suave para a opacidade */
 }
@@ -341,6 +307,18 @@ h1{
   white-space: nowrap;
   margin-bottom: 15px;
 }
+.headset-item img {
+  width: 400px; /* Defina o valor desejado para a largura */
+  height: 355px;
+  border-radius: 61px; /* Isso garantirá que a altura seja ajustada proporcionalmente */
+}
+.img-headset{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
 .valor-antes {
   color: #FF9900; /* Define a cor para o valor "antes" */
   text-decoration: line-through;    /*passa uma linha no meio da palavra*/

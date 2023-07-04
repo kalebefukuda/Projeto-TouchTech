@@ -46,13 +46,6 @@ body.fade-in {
 body.fade-out {
   opacity: 0;
 }
-.product-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
 .header{
   display: flex;
   flex-direction: row;
@@ -64,7 +57,10 @@ body.fade-out {
   position: fixed;
   top: 0;
   background: var(--bg-color);
-  
+  border: solid 3px #53DF8B;
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }
 @media (max-width: 767px) {   /* QUANDO EM TELAS MENORES */
   .header {
@@ -95,22 +91,17 @@ body.fade-out {
   }
   .menu-produtos {
     justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
   }
 }
-.logo{
+.logo a{
   font-family: 'Bungee';
   color: var(--title-color);
   font-size: 40px;
   height: 86px;
   align-self: end;
 }
-.text-logo a{
-  text-shadow: var(--text-shadow); 
-color: var(--title-color);   /*sombra na logo*/
+.text-logo {
+  text-shadow: var(--text-shadow);       /*sombra na logo*/
 }
 .search-bar {
   width: 50%;
@@ -129,8 +120,8 @@ color: var(--title-color);   /*sombra na logo*/
   width: 100%;
   justify-content: center;
   gap: 91px;
-    POSITION: RELATIVE;
-    LEFT: -20PX;
+  POSITION: RELATIVE;
+  LEFT: -20PX;
 }
 .header-menu a {
   display: flex;
@@ -209,39 +200,20 @@ color: var(--title-color);   /*sombra na logo*/
   flex-basis: 100%;
   height: 35px;
   margin: 16px 0 0;
-  transition: transform 0.3s;
-  
 }
-
 .menu-item{
-  
   font-size: 16px;
   display: flex;
-  color: var(--textmenu-color);
+  color: white;
   align-items: center;
-  
 }
-.dropdown-menu{
-  position: absolute;
-  bottom: -100px;
-  display: none;
-  padding: 5px;
-  list-style: none;
-}
-.dropdown-menu li{
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  position: relative;
-  left:-5px;
+.menu-produtos :hover{
+  color: #53DF8B;
+  border-radius: 8px;
 }
 a{
   text-decoration: none;
-  color: white;
-}
-.dropdown-menu a{
-  display: block;
-  
- 
+  color: var(--textmenu-color);
 }
 .header-cart {
   font-family: 'Aoboshi One', serif;
@@ -262,68 +234,44 @@ a{
   position: relative;
     left: -11px;
 }
-.container-main{
+.container-teclado-main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   margin-top: 157px;
 }
- 
-.img-main{
-  border: solid 3px #53DF8B;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-  transition: .35s;
-  cursor: pointer;
-}
-.img-main img{
-  width: 100%;
-}
-.text-alertpromo{
-  background: var(--bg-promocolor);
+.teclado-title{
   display: flex;
-  justify-content: space-evenly;
+  margin: 36px;
+  color:  var(--text-color);
+}
+h2{
   font-family: 'Aoboshi One', serif;
-  color: white;
   border: solid 3px #53DF8B;
   border-left: none;
   border-right: none;
-  height: 37px;
-  margin-top: -6px;
+  border-top: none;
 }
-h1{
-  font-size: 21px;
-  color: white;
-}
-.text-alertpromo ion-icon{
-  font-size: 31px;
-}
-.produtos-main{
+.teclados-main{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  color: var(--text-produtocolor); 
+  color: var(--text-produtocolor);
 }
-.produto-item{
+.teclado-item{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Aoboshi One', serif;
- 
-  transition: opacity 0.3s, transform 0.3s;
-  transition: .35s;
-  cursor: pointer;
 }
-
-.produto-item:hover {
+.teclado-item:hover {
   opacity: 1.8; /* Ajuste o valor de opacidade conforme desejado */
   transform: scale(1.09); /* Ajuste o valor de escala conforme desejado */
   transition: opacity 0.3s, transform 0.3s; /* Adiciona transições suaves */
 }
-.produto-item:not(:hover) {
+.teclado-item:not(:hover) {
   opacity: 1; /* Define a opacidade dos itens de produto quando não estiverem com o mouse em cima */
   transition: opacity 0.3s, transform 0.3s; /* Adiciona uma transição suave para a opacidade */
 }
@@ -332,14 +280,28 @@ h1{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  position: relative;
-  bottom: -46px;
+  
 }
 .title-produtomain{
   align-items: center;
   margin-top: -15px;
   white-space: nowrap;
   margin-bottom: 15px;
+}
+.teclado-item img {
+  width: 400px; /* Defina o valor desejado para a largura */
+  height: 355px;
+  border-radius: 61px; /* Isso garantirá que a altura seja ajustada proporcionalmente */
+}
+.img-teclado{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.img-teclado[src="/Teclado/assets-teclado/TECLADO.png"]{
+  position: relative;
+  bottom: -24px;
 }
 .valor-antes {
   color: #FF9900; /* Define a cor para o valor "antes" */
@@ -348,3 +310,4 @@ h1{
 .valor-depois{
   color: #66BB22;
 }
+
