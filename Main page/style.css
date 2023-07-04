@@ -158,28 +158,28 @@ body{
   margin: 16px 0 0;
   
 }
-
 .menu-item{
   font-size: 16px;
   display: flex;
   color: white;
   align-items: center;
-  
 }
 .dropdown-menu{
   position: absolute;
   bottom: -100px;
-  display: none;
+  
   padding: 5px;
   list-style: none;
+  
+  background:#544C50;
 }
 .dropdown-menu li{
   padding-bottom: 10px;
   margin-bottom: 10px;
   position: relative;
-  left:-5px;
+  font-size: 10px;
+  
 }
-
 a{
   text-decoration: none;
   color: white;
@@ -187,7 +187,6 @@ a{
 .dropdown-menu a{
   display: block;
   
- 
 }
 .menu-item:hover .dropdown-menu{
   display: block;
@@ -263,7 +262,6 @@ h1{
   justify-content: center;
   align-items: center;
   font-family: 'Aoboshi One', serif;
- 
   transition: opacity 0.3s, transform 0.3s;
   transition: .35s;
   cursor: pointer;
