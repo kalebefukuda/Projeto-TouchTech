@@ -299,27 +299,27 @@ a{
     font-size: 50px;
     border-radius: 50px;
     background: #53DF8B;
-    width: 69px;
-    height: 65px;
+    width: 83px;
+    height: 80px;
   }
   .icon-lock{
     position: relative;
-    right: -10px;
-    bottom: -4px;
+    right: -17px;
+    bottom: -12px;
   }
   .icon-adduser{
     position: relative;
-    right: -8px;
-    bottom: -4px;
+    right: -15px;
+    bottom: -13px;
   }
   .title-account{
     color: var(--textmenu-color);
     font-family: 'Bungee';
-    font-size: 28px;
+    font-size: 31px;
   }
   .sub-title-account{
     position: relative;
-    top: -31px;
+    top: -30px;
     color: var(--textmenu-color);
     font-family: 'Aoboshi One', serif;
     font-size: 13px;
@@ -337,19 +337,22 @@ a{
     display: flex;
     background-color: #39A062;
     width: 256px;
-    height: 38px;
+    height: 42px;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
     color: white;
+  }
+  .addinfo-account a:hover {
+    background-color: #53DF8B;     /*hover do cadastre-se*/
   }
   input[type="text"],
 input[type="password"] {
   background-color: var( --menu-bg); /* Cor de fundo desejada */
   border: none;
   color: var(--text-color);
-  height: 42px;
-    width: 259px;
+  height: 43px;
+  width: 270px;
     border-radius: 10px;
 }
 input[type="text"]:hover,
