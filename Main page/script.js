@@ -18,7 +18,12 @@ if (isLightMode) {
 }
 
 // Adicione um evento de clique ao link
-darkModeToggle.addEventListener('click', function() {
+darkModeToggle.addEventListener('click', function(event) {
+  event.preventDefault(); // Prevenir o comportamento padrão do link
+
+  // Salvar a posição atual da página
+  const currentPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
   // Alterne a classe 'light' no elemento body
   document.body.classList.toggle('light');
 
@@ -34,29 +39,41 @@ darkModeToggle.addEventListener('click', function() {
     modoTexto.textContent = 'MODO ESCURO';
     modoIcon.setAttribute('name', 'moon');
   }
+
+  // Restaurar a posição da página após um pequeno atraso
+  setTimeout(() => {
+    window.scrollTo(0, currentPosition);
+  }, 10);
 });
 
-// Selecione todos os links da página com a classe "page-link"
-const pageLinks = document.querySelectorAll('.page-link');
+// Restaurar a posição da página após o carregamento completo da página
+window.addEventListener('load', () => {
+  const currentPosition = localStorage.getItem('scrollPosition');
+  if (currentPosition) {
+    setTimeout(() => {
+      window.scrollTo(0, currentPosition);
+    }, 10);
+  }
 
-// Adicione um evento de clique a cada link
+  document.body.classList.add('fade-in');
+});
+
+// Salvar a posição da página antes de navegar para uma nova página
+const pageLinks = document.querySelectorAll('.page-link');
 pageLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
-    // Prevenir o comportamento padrão do link
     event.preventDefault();
 
-    // Adicionar a classe 'fade-out' ao body
     document.body.classList.add('fade-out');
+    localStorage.setItem('scrollPosition', window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop);
 
-    // Aguardar um breve período de tempo para permitir a transição
     setTimeout(() => {
-      // Navegar para a nova página
       window.location.href = link.href;
-    }, 200); // Ajuste esse valor se necessário
+    }, 200);
   });
 });
-// Quando a página terminar de carregar
-window.addEventListener('load', () => {
-  // Remover a classe 'fade-out' do body
-  document.body.classList.add('fade-in');
+
+// Limpar a posição da página ao sair da página
+window.addEventListener('beforeunload', () => {
+  localStorage.removeItem('scrollPosition');
 });

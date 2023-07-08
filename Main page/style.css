@@ -299,6 +299,13 @@ h1{
   justify-content: space-around;
   color: var(--text-produtocolor); 
 }
+.img-teclado-mainpage{
+  position: relative;
+    top: 22px;
+}
+.headset-text{
+  top: 92px;
+}
 .produto-item{
   display: flex;
   flex-direction: column;
