@@ -106,7 +106,6 @@ body.fade-out {
   color: var(--title-color);
   font-size: 40px;
   height: 86px;
-  align-self: end;
 }
 .text-logo a{
   text-shadow: var(--text-shadow); 
@@ -335,4 +334,21 @@ h1{
 }
 .valor-depois{
   color: #66BB22;
+}
+.container-footer{
+  display: flex;
+  margin-top: 100px;
+  border: 3px #53DF8B solid;
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+.title-footer{
+  display: flex;
+  color: var(--text-color);
+  font-family: 'Bungee';
+  width: 100%;
+    justify-content: center;
+    font-size: 34px;
 }
