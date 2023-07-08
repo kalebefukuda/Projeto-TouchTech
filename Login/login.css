@@ -145,6 +145,9 @@ color: var(--title-color);   /*sombra na logo*/
   color: #39A062;
   font-size: 19px;
 }
+.header-menu :hover{
+  color: #53DF8B;
+}
 #dark-mode-toggle{
   cursor: pointer;
 }
@@ -271,6 +274,9 @@ a{
     width: 100%;
     margin-top: 264px;
   }
+  .header-cart a{
+    color: white;
+  }
   
   .left-column {
     width: 50%;
@@ -321,16 +327,37 @@ a{
   .addinfo-account{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 22px;
     padding: 31px;
     margin: -38px;
-   
+  
+  }
+  .addinfo-account a{
+    font-family: 'Aoboshi One', serif;
+    display: flex;
+    background-color: #39A062;
+    width: 256px;
+    height: 38px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
   }
   input[type="text"],
 input[type="password"] {
   background-color: var( --menu-bg); /* Cor de fundo desejada */
   border: none;
   color: var(--text-color);
-  height: 30px;
-    width: 240px;
+  height: 42px;
+    width: 259px;
+    border-radius: 10px;
+}
+input[type="text"]:hover,
+input[type="password"]:hover {
+  border: #53DF8B solid 2px;
+}
+input[type="text"]::placeholder,
+input[type="password"]::placeholder{
+  color: var(--text-color);
+  font-family: 'Aoboshi One', serif;
 }
