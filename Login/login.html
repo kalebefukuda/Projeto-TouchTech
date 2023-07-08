@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <span class="text-logo"> <a href="/Main page/index.html">TouchTech</a> </span>
+      </div>
+      <div class="search-bar">
+        <nav class="header-menu">
+          <a class="header-item" href="#"
+            ><ion-icon name="person"></ion-icon> MINHA CONTA <br></a>
+          <a class="header-item" href="#"><ion-icon name="heart"></ion-icon> MEUS FAVORITOS</a>
+          <a id= "dark-mode-toggle" class="header-item" href="#"><ion-icon name="moon"></ion-icon> <span id="modo-texto">MODO ESCURO</span></a>
+        </nav>
+        <nav class="header-search">
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input
+                id="search-input"
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                value="   Digite o que você procura..."/>
+              <!--barra de pesquisa-->
+              <button class="search-button" type="submit">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="header-cart"> <a href="#"><ion-icon name="cart"></ion-icon>CARRINHO</div></a>
+      <nav class="menu-produtos">
+        <div class="menu-item">
+          <a class="page-link" href="/Mouse/mouse.html">MOUSES</a>
+        </div>
+        <div class="menu-item">
+          <a class="page-link" href="/Teclado/teclado.html">TECLADOS</a>
+        </div>
+        <div class="menu-item">
+          <a class="page-link" href="/Headset/headset.html"> HEADSETS </a>
+        </div>
+        <div class="menu-item">
+          <a class="page-link" href="/Monitor/monitor.html">MONITORES</a> 
+        </div>
+        <div class="menu-item">
+         <a class="page-link" href="/Mousepad/mousepad.html">MOUSEPADS</a>       
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-login-main">
+      <div class="left-column">
+        <div class="icon-main">
+          <ion-icon class="icon-lock" name="lock-closed-outline"></ion-icon>
+        </div>
+        <div class="title-account">
+          JA TEM UMA CONTA?
+        </div>
+        <div class="sub-title-account">
+          Informe os seus dados abaixo para acessá-la.
+        </div>
+        <div class="addinfo-account">
+          <input type="text" placeholder="E-mail*">
+          <input type="password" placeholder="Senha"> 
+        </div>
+      </div>
+      <div class="right-column">
+       <div class="icon-main">
+        <ion-icon class="icon-adduser" name="person-add-outline"></ion-icon>
+       </div>
+       <div class="title-account">
+        NOVO CLIENTE
+       </div>
+       <div class="sub-title-account">
+        Criar uma conta é facil! Informe seus dados para aproveitar os benefícios do nosso site.
+       </div>
+       <div class="addinfo-account">
+        <a href="#">CADASTRE-SE</a>
+       </div>
+      </div>
+      
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="login.js"></script>
+</html>
