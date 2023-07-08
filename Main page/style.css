@@ -64,6 +64,11 @@ body.fade-out {
   position: fixed;
   top: 0;
   background: var(--bg-color);
+  background: var(--bg-color);
+    border: solid 3px #53DF8B;
+    border-left: none;
+    border-right: none;
+    border-top: none;
   
 }
 @media (max-width: 767px) {   /* QUANDO EM TELAS MENORES */
