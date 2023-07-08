@@ -287,6 +287,10 @@ h2{
   position: relative;
     bottom: -18px;
 }
+.fallen-text{
+  position: relative;
+    bottom: -36px;
+}
 .mouse-item:hover {
   opacity: 1.8; /* Ajuste o valor de opacidade conforme desejado */
   transform: scale(1.09); /* Ajuste o valor de escala conforme desejado */
@@ -301,14 +305,12 @@ h2{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  position: relative;
-  bottom: -46px;
+ 
 }
 .title-produtomain{
   align-items: center;
-  margin-top: -15px;
-  white-space: nowrap;
-  margin-bottom: 15px;
+  margin-top: 22px;
+  margin-bottom: 3px;
 }
 .mouse-item img {
   width: 400px; /* Defina o valor desejado para a largura */
@@ -325,8 +327,10 @@ h2{
   width: 492px;
 }
 .img-mouse[src="/Mouse/assets-mouse/fallen.png"]{
-  width: 343px;
-  height: 323px;
+  width: 331px;
+  height: 315px;
+  position: relative;
+  bottom: -24px;
 }
 .valor-antes {
   color: #FF9900; /* Define a cor para o valor "antes" */
