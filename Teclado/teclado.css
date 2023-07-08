@@ -136,6 +136,9 @@ body.fade-out {
   color: #39A062;
   font-size: 19px;
 }
+.header-menu :hover{
+  color: #53DF8B;
+}
 #dark-mode-toggle{
   cursor: pointer;
 }
