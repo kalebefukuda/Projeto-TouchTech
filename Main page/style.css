@@ -212,35 +212,22 @@ color: var(--title-color);   /*sombra na logo*/
   transition: transform 0.3s;
   
 }
-.menu-produtos :hover{
-  color: #53DF8B;
- 
-  border-radius: 8px;
-  
-}
+
 .menu-item{
   
   font-size: 16px;
   display: flex;
   color: var(--textmenu-color);
   align-items: center;
+  
 }
-.menu-item-link {
-  transition: opacity 0.3s ease-in-out;
+.menu-produtos :hover{
+  color: #53DF8B;
+  border-radius: 8px;
 }
-
-.menu-item-link:hover {
-  opacity: 0.7;
-}
-
-.menu-item-link:active {
-  opacity: 0.5;
-}
-
-a{
-  text-decoration: none;
-  color: var(--textmenu-color);
- 
+ a{
+    text-decoration: none;
+    color: var(--textmenu-color);
 }
 .header-cart {
   font-family: 'Aoboshi One', serif;
@@ -311,8 +298,7 @@ h1{
   justify-content: center;
   align-items: center;
   font-family: 'Aoboshi One', serif;
-  backface-visibility: hidden;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
   transition: .35s;
   cursor: pointer;
 }
