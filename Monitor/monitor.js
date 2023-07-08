@@ -1,6 +1,7 @@
 // Selecione o link "Modo Escuro" pelo ID
 const darkModeToggle = document.getElementById('dark-mode-toggle');
 const modoTexto = document.getElementById('modo-texto');
+const modoIcon = darkModeToggle.querySelector('ion-icon');
 
 // Verifique se há um estado armazenado para o modo claro
 const isLightMode = localStorage.getItem('lightMode') === 'true';
@@ -9,9 +10,11 @@ const isLightMode = localStorage.getItem('lightMode') === 'true';
 if (isLightMode) {
   document.body.classList.add('light');
   modoTexto.textContent = 'MODO CLARO';
+  modoIcon.setAttribute('name', 'sunny');
 } else {
   document.body.classList.remove('light');
   modoTexto.textContent = 'MODO ESCURO';
+  modoIcon.setAttribute('name', 'moon');
 }
 
 // Adicione um evento de clique ao link
@@ -26,10 +29,13 @@ darkModeToggle.addEventListener('click', function() {
   // Alterne o texto do link entre "Modo Escuro" e "Modo Claro"
   if (isLightMode) {
     modoTexto.textContent = 'MODO CLARO';
+    modoIcon.setAttribute('name', 'sunny');
   } else {
     modoTexto.textContent = 'MODO ESCURO';
+    modoIcon.setAttribute('name', 'moon');
   }
 });
+
 // Selecione todos os links da página com a classe "page-link"
 const pageLinks = document.querySelectorAll('.page-link');
 
