@@ -289,8 +289,8 @@ h2{
     bottom: -18px;
 }
 .fallen-text{
-  position: relative;
-    bottom: -36px;
+  margin: 36px;
+  padding: 2px;
 }
 .mouse-item:hover {
   opacity: 1.8; /* Ajuste o valor de opacidade conforme desejado */
@@ -301,12 +301,13 @@ h2{
   opacity: 1; /* Define a opacidade dos itens de produto quando não estiverem com o mouse em cima */
   transition: opacity 0.3s, transform 0.3s; /* Adiciona uma transição suave para a opacidade */
 }
-.text-container-produto{
+.text-container-teclado{
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
- 
+  position: relative;
+  bottom: -49px;
 }
 .title-produtomain{
   align-items: center;
