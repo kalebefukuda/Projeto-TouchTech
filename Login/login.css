@@ -212,10 +212,7 @@ color: var(--title-color);   /*sombra na logo*/
   height: 35px;
   margin: 16px 0 0;
   transition: transform 0.3s;
-  border: 3px #53DF8B solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  
   
 }
 .menu-produtos :hover{
