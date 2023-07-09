@@ -1,0 +1,99 @@
+.container-produto-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 264px;
+  }
+  .header-cart a{
+    color: white;
+  }
+  
+  .left-column {
+    width: 50%;
+   flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+  
+  .right-column {
+    width: 50%;
+   flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    
+  }
+  .icon-main{
+    color: white;
+    font-size: 50px;
+    border-radius: 50px;
+    background: #53DF8B;
+    width: 83px;
+    height: 80px;
+  }
+  .icon-lock{
+    position: relative;
+    right: -17px;
+    bottom: -12px;
+  }
+  .icon-adduser{
+    position: relative;
+    right: -15px;
+    bottom: -13px;
+  }
+  .title-account{
+    color: var(--textmenu-color);
+    font-family: 'Aoboshi One', serif;
+    font-size: 31px;
+    width: 510px;
+  }
+  
+  .addinfo-account{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 31px;
+    margin: -38px;
+  
+  }
+  .subtitle-container{
+    display: flex;
+    gap: 106px;
+    position: relative;
+    bottom: -96px;
+
+  }
+  .price-produto{
+    font-family: 'Aoboshi One', serif;
+  }
+  .subtitle-container a{
+    font-family: 'Aoboshi One', serif;
+    display: flex;
+    background-color: #66BB22;
+    width: 213px;
+    height: 57px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .subtitle-container a:hover {
+    background-color: #53DF8B;     /*hover do cadastre-se*/
+  }
+ .valor-antes-produto {
+  color: #FF9900; /* Define a cor para o valor "antes" */
+  text-decoration: line-through;    /*passa uma linha no meio da palavra*/
+  
+  font-size: 20px;
+}
+.valor-depois-produto{
+  color: #66BB22;
+  
+  font-size: 35px;
+}
+.parcelas-produto{
+  color: var(--text-produtocolor);
+  font-size: 17px;
+
+}
