@@ -262,7 +262,9 @@ color: var(--title-color);   /*sombra na logo*/
   width: 100%;
   margin-top: 157px;
 }
- 
+ .header-cart a{
+  color: white;
+ }
 .img-main{
   border: solid 3px #53DF8B;
   border-left: none;
@@ -357,8 +359,8 @@ h1{
   border-bottom: none;
 }
 .title-footer{
+  color: var(--title-color);
   display: flex;
-  color: var(--text-color);
   font-family: 'Bungee';
   width: 100%;
     justify-content: center;
