@@ -46,6 +46,12 @@ body.fade-in {
 body.fade-out {
   opacity: 0;
 }
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
 .header{
   display: flex;
@@ -60,14 +66,12 @@ body.fade-out {
   background: var(--bg-color);
   
 }
-
 @media (max-width: 767px) {   /* QUANDO EM TELAS MENORES */
   .header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
   .logo{
     align-self: center;
     margin-bottom: 20px;
@@ -76,37 +80,36 @@ body.fade-out {
     left: 50%;
     transform: translateX(-50%);
   }
-
   .header-menu {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 60px !important;
   }
-
   .header-search {
     width: 100%;
     margin-top: 10px;
   }
-
   .header-search input {
     width: 100%;
   }
-
   .menu-produtos {
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
 }
-
-.logo a { 
+.logo{
   font-family: 'Bungee';
   color: var(--title-color);
   font-size: 40px;
   height: 86px;
-  align-self: end;
 }
-.text-logo{
-  text-shadow: var(--text-shadow);       /*sombra na logo*/
+.text-logo a{
+  text-shadow: var(--text-shadow); 
+color: var(--title-color);   /*sombra na logo*/
 }
 .search-bar {
   width: 50%;
@@ -136,7 +139,6 @@ body.fade-out {
   gap: 5px;
   height: 100%;
 }
-
 .header-menu a ion-icon {
   margin-bottom: 5px;
   color: #39A062;
@@ -209,26 +211,40 @@ body.fade-out {
   flex-basis: 100%;
   height: 35px;
   margin: 16px 0 0;
+  transition: transform 0.3s;
   
   
-}
-.menu-item{
-  font-size: 16px;
-  display: flex;
-  color: white;
-  align-items: center;
 }
 .menu-produtos :hover{
   color: #53DF8B;
+ 
   border-radius: 8px;
+  
 }
- a{
-    text-decoration: none;
-    color: var(--textmenu-color);
+.menu-item{
+  
+  font-size: 16px;
+  display: flex;
+  color: var(--textmenu-color);
+  align-items: center;
+}
+.menu-item-link {
+  transition: opacity 0.3s ease-in-out;
 }
 
+.menu-item-link:hover {
+  opacity: 0.7;
+}
 
+.menu-item-link:active {
+  opacity: 0.5;
+}
 
+a{
+  text-decoration: none;
+  color: var(--textmenu-color);
+ 
+}
 .header-cart {
   font-family: 'Aoboshi One', serif;
   font-size: 20px;
@@ -248,85 +264,99 @@ body.fade-out {
   position: relative;
     left: -11px;
 }
-.container-headset-main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  margin-top: 157px;
-}
-.headset-title{
-  display: flex;
-  margin: 36px;
-  color:  var(--text-color);
-}
-h2{
-  font-family: 'Aoboshi One', serif;
-  border: solid 3px #53DF8B;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-}
-.headsets-main{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  color: var(--text-produtocolor);
-}
-.headset-item{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Aoboshi One', serif;
-}
-.title-produtomain{
-  position: relative;
-    bottom: -15px;
-}
-.text-produtomain{
-  position: relative;
-    bottom: -18px;
-}
-.headset-item:hover {
-  opacity: 1.8; /* Ajuste o valor de opacidade conforme desejado */
-  transform: scale(1.09); /* Ajuste o valor de escala conforme desejado */
-  transition: opacity 0.3s, transform 0.3s; /* Adiciona transições suaves */
-}
-.headset-item:not(:hover) {
-  opacity: 1; /* Define a opacidade dos itens de produto quando não estiverem com o mouse em cima */
-  transition: opacity 0.3s, transform 0.3s; /* Adiciona uma transição suave para a opacidade */
-}
-.text-container-produto{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  bottom: -46px;
-}
-.title-produtomain{
-  align-items: center;
-  margin-top: -15px;
-  white-space: nowrap;
-  margin-bottom: 15px;
-}
-.headset-item img {
-  width: 400px; /* Defina o valor desejado para a largura */
-  height: 355px;
-  border-radius: 61px; /* Isso garantirá que a altura seja ajustada proporcionalmente */
-}
-.img-headset{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container-login-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 264px;
+  }
+  .header-cart a{
+    color: white;
+  }
   
+  .left-column {
+    width: 50%;
+   flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+  
+  .right-column {
+    width: 50%;
+   flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    
+  }
+  .icon-main{
+    color: white;
+    font-size: 50px;
+    border-radius: 50px;
+    background: #53DF8B;
+    width: 83px;
+    height: 80px;
+  }
+  .icon-lock{
+    position: relative;
+    right: -17px;
+    bottom: -12px;
+  }
+  .icon-adduser{
+    position: relative;
+    right: -15px;
+    bottom: -13px;
+  }
+  .title-account{
+    color: var(--textmenu-color);
+    font-family: 'Bungee';
+    font-size: 31px;
+  }
+  .sub-title-account{
+    position: relative;
+    top: -30px;
+    color: var(--textmenu-color);
+    font-family: 'Aoboshi One', serif;
+    font-size: 13px;
+  }
+  .addinfo-account{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 31px;
+    margin: -38px;
+  
+  }
+  .addinfo-account a{
+    font-family: 'Aoboshi One', serif;
+    display: flex;
+    background-color: #39A062;
+    width: 256px;
+    height: 42px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .addinfo-account a:hover {
+    background-color: #53DF8B;     /*hover do cadastre-se*/
+  }
+  input[type="text"],
+input[type="password"] {
+  background-color: var( --menu-bg); /* Cor de fundo desejada */
+  border: none;
+  color: var(--text-color);
+  height: 43px;
+  width: 270px;
+    border-radius: 10px;
 }
-
-.valor-antes {
-  color: #FF9900; /* Define a cor para o valor "antes" */
-  text-decoration: line-through;    /*passa uma linha no meio da palavra*/
+input[type="text"]:hover,
+input[type="password"]:hover {
+  border: #53DF8B solid 2px;
 }
-.valor-depois{
-  color: #66BB22;
+input[type="text"]::placeholder,
+input[type="password"]::placeholder{
+  color: var(--text-color);
+  font-family: 'Aoboshi One', serif;
 }

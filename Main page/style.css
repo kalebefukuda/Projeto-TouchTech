@@ -64,6 +64,11 @@ body.fade-out {
   position: fixed;
   top: 0;
   background: var(--bg-color);
+  background: var(--bg-color);
+    border: solid 3px #53DF8B;
+    border-left: none;
+    border-right: none;
+    border-top: none;
   
 }
 @media (max-width: 767px) {   /* QUANDO EM TELAS MENORES */
@@ -106,7 +111,6 @@ body.fade-out {
   color: var(--title-color);
   font-size: 40px;
   height: 86px;
-  align-self: end;
 }
 .text-logo a{
   text-shadow: var(--text-shadow); 
@@ -144,6 +148,9 @@ color: var(--title-color);   /*sombra na logo*/
   margin-bottom: 5px;
   color: #39A062;
   font-size: 19px;
+}
+.header-menu :hover{
+  color: #53DF8B;
 }
 #dark-mode-toggle{
   cursor: pointer;
@@ -255,7 +262,9 @@ color: var(--title-color);   /*sombra na logo*/
   width: 100%;
   margin-top: 157px;
 }
- 
+ .header-cart a{
+  color: white;
+ }
 .img-main{
   border: solid 3px #53DF8B;
   border-left: none;
@@ -291,6 +300,13 @@ h1{
   flex-direction: row;
   justify-content: space-around;
   color: var(--text-produtocolor); 
+}
+.img-teclado-mainpage{
+  position: relative;
+    top: 22px;
+}
+.headset-text{
+  top: 92px;
 }
 .produto-item{
   display: flex;
@@ -332,4 +348,21 @@ h1{
 }
 .valor-depois{
   color: #66BB22;
+}
+.container-footer{
+  display: flex;
+  margin-top: 100px;
+  border: 3px #53DF8B solid;
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+.title-footer{
+  color: var(--title-color);
+  display: flex;
+  font-family: 'Bungee';
+  width: 100%;
+    justify-content: center;
+    font-size: 34px;
 }

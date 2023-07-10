@@ -142,6 +142,9 @@ body.fade-out {
   color: #39A062;
   font-size: 19px;
 }
+.header-menu :hover{
+  color: #53DF8B;
+}
 #dark-mode-toggle{
   cursor: pointer;
 }
@@ -206,6 +209,7 @@ body.fade-out {
   flex-basis: 100%;
   height: 35px;
   margin: 16px 0 0;
+  
   
 }
 .menu-item{
@@ -284,6 +288,10 @@ h2{
   position: relative;
     bottom: -18px;
 }
+.fallen-text{
+  margin: 36px;
+  padding: 2px;
+}
 .mouse-item:hover {
   opacity: 1.8; /* Ajuste o valor de opacidade conforme desejado */
   transform: scale(1.09); /* Ajuste o valor de escala conforme desejado */
@@ -293,19 +301,18 @@ h2{
   opacity: 1; /* Define a opacidade dos itens de produto quando não estiverem com o mouse em cima */
   transition: opacity 0.3s, transform 0.3s; /* Adiciona uma transição suave para a opacidade */
 }
-.text-container-produto{
+.text-container-teclado{
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   position: relative;
-  bottom: -46px;
+  bottom: -49px;
 }
 .title-produtomain{
   align-items: center;
-  margin-top: -15px;
-  white-space: nowrap;
-  margin-bottom: 15px;
+  margin-top: 22px;
+  margin-bottom: 3px;
 }
 .mouse-item img {
   width: 400px; /* Defina o valor desejado para a largura */
@@ -322,8 +329,10 @@ h2{
   width: 492px;
 }
 .img-mouse[src="/Mouse/assets-mouse/fallen.png"]{
-  width: 343px;
-  height: 323px;
+  width: 331px;
+  height: 315px;
+  position: relative;
+  bottom: -24px;
 }
 .valor-antes {
   color: #FF9900; /* Define a cor para o valor "antes" */
