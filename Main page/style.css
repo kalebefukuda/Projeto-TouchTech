@@ -58,6 +58,7 @@ body.fade-out {
 
 .header{
   display: flex;
+  z-index: 1; /*ordem de empilhamento*/
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
