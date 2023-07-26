@@ -16,6 +16,7 @@
   --switch-bg-url: url(<ion-icon name="moon"></ion-icon>);
   --menu-bg: #544C50;
   --textmenu-color: white;
+  --textalertpromo: #544C50;
 }
 .light{
   --text-color: #363033;
@@ -27,6 +28,7 @@
   --switch-bg-url: url(<ion-icon name="sunny"></ion-icon>);
   --menu-bg: #D9D9D9;
   --textmenu-color: #544C50;
+  --textalertpromo: #53DF8B;
 }
 body{
   background: var(--bg-color);
@@ -39,6 +41,7 @@ body{
   transition: background-color 0.3s ease;  /*transiçãao de back com delay*/
   opacity: 0;
   transition: opacity 0.05s ease-in-out;
+ 
 }
 body.fade-in {
   opacity: 1;
@@ -277,7 +280,7 @@ color: var(--title-color);   /*sombra na logo*/
   width: 100%;
 }
 .text-alertpromo{
-  background: var(--bg-promocolor);
+  background: var(--textalertpromo);
   display: flex;
   justify-content: space-evenly;
   font-family: 'Aoboshi One', serif;

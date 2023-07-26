@@ -24,24 +24,6 @@
     gap: 23px;
     
   }
-  .icon-main{
-    color: white;
-    font-size: 50px;
-    border-radius: 50px;
-    background: #53DF8B;
-    width: 83px;
-    height: 80px;
-  }
-  .icon-lock{
-    position: relative;
-    right: -17px;
-    bottom: -12px;
-  }
-  .icon-adduser{
-    position: relative;
-    right: -15px;
-    bottom: -13px;
-  }
   .title-account{
     color: var(--textmenu-color);
     font-family: 'Aoboshi One', serif;
